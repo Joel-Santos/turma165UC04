@@ -38,6 +38,7 @@ export default class ContaBancaria {
     sacar(valor){
         if(valor>0 && this.getSaldo >=valor){
             this.#saldo -= valor;
+            //this.setSaldo = this.getSaldo - valor;
         }else if(valor<=0){
             console.log("Não é possível sacar valores menores ou igual a zero.");
         }else{
